@@ -16,30 +16,42 @@
 		<h2 class="card-title flex justify-center">Let's start the quiz!</h2>
 	</div>
 </div>
-<label
-	class="input-group my-5 justify-center mx-auto"
-	style="min-width: 14rem; max-width: 30rem"
->
-	<input
-		type="number"
-		placeholder="Enter question number"
-		class="input input-bordered w-full"
-		[(ngModel)]="nextQuestionNumber"
-		[min]="1"
-		[max]="quizes.length"
-		[disabled]="!controllerActive"
-	/>
-	<button
-		class="btn"
-		(click)="nextQuestion()"
-		[ngClass]="{
-			'btn-disabled':
-				!nextQuestionNumber ||
-				nextQuestionNumber === 0 ||
-				nextQuestionNumber > quizes.length ||
-				!controllerActive
-		}"
+<div class="mx-auto flex justify-center items-center gap-3">
+	<label
+		class="input-group my-5 justify-center mx-auto"
+		style="min-width: 14rem; max-width: 30rem"
 	>
-		Next
-	</button>
-</label>
+		<input
+			type="number"
+			placeholder="Enter question number"
+			class="input input-bordered w-full"
+			[(ngModel)]="nextQuestionNumber"
+			[min]="1"
+			[max]="quizes.length"
+			(keyup.enter)="changeQuestionOnEnterPress($event)"
+			[disabled]="!controllerActive"
+		/>
+		<button
+			class="btn btn-info"
+			(click)="nextQuestion()"
+			[ngClass]="{
+				'btn-disabled':
+					!nextQuestionNumber ||
+					nextQuestionNumber === 0 ||
+					nextQuestionNumber > quizes.length ||
+					!controllerActive
+			}"
+		>
+			Next
+		</button>
+		<button
+			class="btn btn-success"
+			(click)="getRandomQuiz()"
+			[ngClass]="{
+				'btn-disabled': !controllerActive
+			}"
+		>
+			Get Random Question
+		</button>
+	</label>
+</div>

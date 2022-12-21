@@ -18,7 +18,6 @@ export class QuizComponent implements OnInit {
 	ngOnInit(): void {}
 
 	isAnswerCorrectCapture(event: any) {
-		console.log(event)
 		this.setControllerActive(true)
 	}
 
@@ -27,7 +26,34 @@ export class QuizComponent implements OnInit {
 		this.setControllerActive(false)
 	}
 
+	changeQuestionOnEnterPress(event: any) {
+		if (
+			parseInt(event.target.value) > 0 &&
+			parseInt(event.target.value) < this.quizes.length
+		) {
+			this.nextQuestion()
+		}
+	}
+
 	setControllerActive(value: boolean) {
 		this.controllerActive = true
+	}
+
+	isRecursiveMoreThan5Times: number = 0
+	getRandomQuiz() {
+		const maxIndex: number = this.quizes.length
+		const lastActiveQuizId: number = this.activeQuizId[0]
+
+		this.activeQuizId[0] = Math.floor(Math.random() * maxIndex)
+
+		// checking if current active quiz was same as last one or not.
+		if (
+			this.activeQuizId[0] === lastActiveQuizId &&
+			this.isRecursiveMoreThan5Times < 30
+		) {
+			this.isRecursiveMoreThan5Times += 1
+			this.getRandomQuiz()
+		}
+		this.isRecursiveMoreThan5Times = 0
 	}
 }

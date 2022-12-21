@@ -4,6 +4,7 @@
 	<div
 		class="success-message flex absolute top-0 bottom-0 left-0 right-0 justify-center glass items-center flex-col"
 		*ngIf="answerCorrect !== undefined"
+		style="z-index: 999999999999999999"
 	>
 		<div
 			class="success text-center"
@@ -24,7 +25,15 @@
 		</div>
 	</div>
 	<div class="card-body">
-		<h2 class="card-title">Q{{ quiz.id }}) {{ quiz.question }}</h2>
+		<div
+			class="tooltip"
+			style="z-index: 0 !important"
+			[attr.data-tip]="'Question number: ' + quiz.id"
+		>
+			<h2 class="card-title text-left">
+				{{ quiz.question }}
+			</h2>
+		</div>
 		<div>
 			<div
 				class="form-control"
