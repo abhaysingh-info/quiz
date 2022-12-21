@@ -1,0 +1,56 @@
+<div
+	class="card w-full bg-base-100 shadow-2xl border-0 relative overflow-hidden"
+>
+	<div
+		class="success-message flex absolute top-0 bottom-0 left-0 right-0 justify-center glass items-center flex-col"
+		*ngIf="answerCorrect !== undefined"
+	>
+		<div
+			class="success text-center"
+			*ngIf="answerCorrect !== undefined && answerCorrect"
+		>
+			<div class="text-6xl">🥳</div>
+			<div class="text-2xl mt-3 font-semibold">Congratulations 🎉</div>
+		</div>
+		<div
+			class="faliur text-center"
+			*ngIf="answerCorrect !== undefined && !answerCorrect"
+		>
+			<div class="text-6xl">😔</div>
+			<div class="text-xl mt-3 font-semibold">
+				Better luck next time!
+				<b>Correct answer was "{{ quiz.options[quiz.correctOption - 1] }}"</b>
+			</div>
+		</div>
+	</div>
+	<div class="card-body">
+		<h2 class="card-title">Q{{ quiz.id }}) {{ quiz.question }}</h2>
+		<div>
+			<div
+				class="form-control"
+				*ngFor="let option of quiz.options; let index = index"
+			>
+				<div class="label justify-start font-semibold">
+					<input
+						type="radio"
+						[id]="'quiz_check-' + quiz.id + '-' + index"
+						[name]="'radio-' + quiz.id"
+						class="radio checked:bg-primary"
+						[value]="index + 1"
+						[(ngModel)]="optionSelected"
+					/>
+					<label
+						[for]="'quiz_check-' + quiz.id + '-' + index"
+						class="label-text"
+						>&nbsp;&nbsp;{{ option }}</label
+					>
+				</div>
+			</div>
+		</div>
+		<div class="card-actions justify-start">
+			<button class="btn btn-primary btn-sm" (click)="checkAnswer()">
+				Check Answer
+			</button>
+		</div>
+	</div>
+</div>

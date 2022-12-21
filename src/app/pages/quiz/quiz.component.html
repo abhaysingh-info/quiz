@@ -1,0 +1,45 @@
+<ng-container *ngFor="let id of activeQuizId">
+	<div class="max-w-screen-md">
+		<app-question
+			(isAnswerCorrect)="isAnswerCorrectCapture($event)"
+			[quiz]="quizes[id]"
+			*ngIf="id !== -1"
+		></app-question>
+	</div>
+</ng-container>
+<div
+	class="card card-compact w-96 bg-base-100 shadow-xl max-w-screen-md"
+	*ngIf="activeQuizId[0] === -1"
+>
+	<figure><img src="/assets/questions.svg" alt="Shoes" /></figure>
+	<div class="card-body">
+		<h2 class="card-title flex justify-center">Let's start the quiz!</h2>
+	</div>
+</div>
+<label
+	class="input-group my-5 justify-center mx-auto"
+	style="min-width: 14rem; max-width: 30rem"
+>
+	<input
+		type="number"
+		placeholder="Enter question number"
+		class="input input-bordered w-full"
+		[(ngModel)]="nextQuestionNumber"
+		[min]="1"
+		[max]="quizes.length"
+		[disabled]="!controllerActive"
+	/>
+	<button
+		class="btn"
+		(click)="nextQuestion()"
+		[ngClass]="{
+			'btn-disabled':
+				!nextQuestionNumber ||
+				nextQuestionNumber === 0 ||
+				nextQuestionNumber > quizes.length ||
+				!controllerActive
+		}"
+	>
+		Next
+	</button>
+</label>

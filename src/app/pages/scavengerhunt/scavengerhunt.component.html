@@ -1,0 +1,50 @@
+<div
+	class="card card-compact w-96 bg-base-100 shadow-xl py-3"
+	*ngIf="currentHuntId === 0"
+>
+	<figure><img src="/assets/searching.svg" /></figure>
+	<div class="card-body">
+		<h2 class="card-title flex justify-center">Let's start the hunt!</h2>
+	</div>
+</div>
+<div
+	class="card w-screen bg-base-100 shadow-xl max-w-screen-md"
+	*ngIf="currentHuntId !== 0"
+>
+	<div class="card-body">
+		<h2 class="card-title">
+			{{ scavengerhunts[currentHuntId - 1].id }})
+			{{ scavengerhunts[currentHuntId - 1].question }}
+		</h2>
+		<p *ngIf="revealAnswer">
+			{{ scavengerhunts[currentHuntId - 1].answer }}
+		</p>
+		<div class="card-actions">
+			<button (click)="toggleAnswer()" class="btn btn-primary">
+				Reveal Answer
+			</button>
+		</div>
+	</div>
+</div>
+<label
+	class="input-group my-5 justify-center mx-auto"
+	style="min-width: 14rem; max-width: 30rem"
+>
+	<input
+		type="number"
+		placeholder="Enter question number"
+		class="input input-bordered w-full"
+		[min]="0"
+		[max]="scavengerhunts.length"
+		[(ngModel)]="userHuntId"
+	/>
+	<button
+		class="btn"
+		(click)="setCurrentHunt()"
+		[ngClass]="{
+			'btn-disabled': userHuntId > scavengerhunts.length || userHuntId < 1
+		}"
+	>
+		Next
+	</button>
+</label>
