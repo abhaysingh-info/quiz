@@ -905,4 +905,285 @@ export const quiz: Quiz[] = [
 		options: ['12', '14', '27', '53'],
 		correctOption: 2,
 	},
+	{
+		id: 131,
+		question: 'If the time is 12pm, how many hours is it until 6pm?',
+		options: ['3 hr', '6 hr', '12 hr', '18 hr'],
+		correctOption: 2,
+	},
+	{
+		id: 132,
+		question:
+			'If I have a bag of 5 yellow balls and 5 green balls, what is the probability (in %) of picking a yellow ball?',
+		options: ['12', '14', '27', '53'],
+		correctOption: 2,
+	},
+	{
+		id: 133,
+		question:
+			'Priya had 16 Red Balls, 2 Green Balls, 9  Blue Balls, and 1 Multicolor Ball. If He Lost 9 Red Balls, 1 Green Ball, and 3 Blue Balls. How Many Balls would be Left?',
+		options: ['15', '11', '28', '39'],
+		correctOption: 1,
+	},
+	{
+		id: 134,
+		question: 'How many months make a century?',
+		options: ['12', '120', '1200', '12000'],
+		correctOption: 3,
+	},
+	{
+		id: 135,
+		question:
+			'If David’s age is 27 years old in 2011. What was his age in 2003?',
+		options: ['17 Years', '37 Years', '20 Years', '19 Years'],
+		correctOption: 4,
+	},
+	{
+		id: 136,
+		question:
+			'The difference between the smallest number of four digits and the largest number of three digits is …….',
+		options: ['1', '100', '0', '99'],
+		correctOption: 1,
+	},
+	{
+		id: 137,
+		question: 'Simplify :150 ÷ (6 + 3 x 8) - 5',
+		options: ['2', '5', '0', 'None of these'],
+		correctOption: 3,
+	},
+	{
+		id: 138,
+		question: 'Which is the largest number in 15/17, 15/18, 15/19, 15/21?',
+		options: ['15/17', '15/18', '15/19', '15/21'],
+		correctOption: 1,
+	},
+	{
+		id: 139,
+		question: 'What is the sum of one digit prime numbers?',
+		options: ['11', '13', '15', '17'],
+		correctOption: 4,
+	},
+	{
+		id: 140,
+		question: 'Name a triangle whose two angles are equal.',
+		options: [
+			'Right angle triangle',
+			'Isosceles triangle',
+			'Scalene triangle',
+			'None of these',
+		],
+		correctOption: 2,
+	},
+	{
+		id: 141,
+		question: 'What is 999 times 100.0?',
+		options: ['199.0', '999.0', '9990', '99900'],
+		correctOption: 4,
+	},
+	{
+		id: 142,
+		question: '1010 gram = ……… kg.',
+		options: ['10.10 kg', '101.0 kg', '1.001 kg', '1.01 kg'],
+		correctOption: 4,
+	},
+	{
+		id: 143,
+		question:
+			'Average of three person’s age is 9 years. Find the sum of there age.',
+		options: ['18', '21', '24', '27'],
+		correctOption: 3,
+	},
+	{
+		id: 144,
+		question: 'How many cents is equal to $ ¼?',
+		options: ['15', '20', '25', '30'],
+		correctOption: 3,
+	},
+	{
+		id: 145,
+		question: 'How many diagonals are there in a quadrilateral?',
+		options: ['2', '3', '4', '6'],
+		correctOption: 1,
+	},
+	{
+		id: 146,
+		question:
+			'Speed of a car is 60 km/hr. Distance covered in 1 ¼ hours is ………',
+		options: ['60 KM', '65 KM', '70 KM', '75 KM'],
+		correctOption: 4,
+	},
+	{
+		id: 147,
+		question: 'How many surfaces are there in a cube?',
+		options: ['3', '4', '5', 'None of these'],
+		correctOption: 4,
+	},
+	{
+		id: 148,
+		question:
+			'How much water is added to 750 g milk to get 1 kilogram mixture of liquid?',
+		options: ['2.5 kg', '0.25 kg', '20.5 kg', '25.0 kg'],
+		correctOption: 2,
+	},
+	{
+		id: 149,
+		question: 'Which value of x makes the equation true? x – 7 = –13',
+		options: ['-20 deg', '20 deg', '-6 deg', '6 deg'],
+		correctOption: 3,
+	},
+	{
+		id: 150,
+		question: 'Simplify: {36 ÷ (-9)} ÷ {(-24) ÷ 6}',
+		options: ['1', '2', '3', '-1'],
+		correctOption: 1,
+	},
+	{
+		id: 151,
+		question: 'What should be added to (5)3/7 to get 12?',
+		options: ['7/25', '9/34', '2/59', '46/7'],
+		correctOption: 4,
+	},
+	{
+		id: 152,
+		question: 'Each side of a square is (6)2/3 m long. Find its Area.',
+		options: ['(44)4/9 m^2', '(12)3/2 m^2', '(12)3/2 m^2', 'None of these'],
+		correctOption: 1,
+	},
+
+	// complete from here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	{
+		id: 153,
+		question:
+			'A car can cover a distance of 522 km on 36 liters of petrol. How far can it travel on 14 liters of petrol?',
+		options: ['213 km', '223 km', '203 km', '302 km'],
+		correctOption: 3,
+	},
+	{
+		id: 154,
+		question:
+			'Two numbers are in ratio 4 : 5. If the sum of the numbers is 135, find the numbers',
+		options: ['60 and 75', '50 and 65', '70 and 95', '65 and 75'],
+		correctOption: 1,
+	},
+	{
+		id: 155,
+		question:
+			'A long rope has to be cut to make 23 small pieces. If it is double folded to start with how many times does it need to be cut?',
+		options: ['9', '23', '11', '12'],
+		correctOption: 3,
+	},
+	{
+		id: 156,
+		question:
+			'Ruby’s height is 5’2”. Ana is taller than Ruby but she is not taller than Pamela. Pamela is shorter than her cousin Ron but she is not shorter than Ruby. Who is the tallest in the group?',
+		options: ['Ana', 'Ron', 'Pamela', 'Ruby'],
+		correctOption: 2,
+	},
+	{
+		id: 157,
+		question:
+			'A clock seen through a mirror, shows quarter past three. What is the correct time shown by the clock?',
+		options: ['3.15', '8.45', '9.15', '9.45'],
+		correctOption: 2,
+	},
+	{
+		id: 158,
+		question:
+			'A river flows west to east and on the way turns left and go in a semi-circle round a hillock, and then turns left at right-angles. In what direction is the river finally flowing?',
+		options: ['North', 'South', 'East', 'West'],
+		correctOption: 3,
+	},
+	{
+		id: 159,
+		question:
+			'Tom was not at school on Saturday last. He was first absent for four days before that. Today is Monday, the 31st of October. When was Tom first absent? Give the day and date.',
+		options: [
+			'Monday, Oct. 24',
+			'Tuesday, Oct. 25',
+			'Wednesday, Oct. 26',
+			'Thursday, Oct. 27',
+		],
+		correctOption: 3,
+	},
+	{
+		id: 160,
+		question:
+			'A clock shows the time as 12.20. What is the angle the hour hand makes with the minutes hand?',
+		options: ['100', '110', '120', '130'],
+		correctOption: 2,
+	},
+	{
+		id: 161,
+		question:
+			'Nil is 23 years 1 month old, Shelly is 18 years 7 months old and Ben is as much older than Shelly is younger than Nil. The age of Ben is ……. .',
+		options: [
+			'18 years 6 months',
+			'21 years 11 months',
+			'20 years 9 months',
+			'20 years 10 months',
+		],
+		correctOption: 4,
+	},
+	{
+		id: 162,
+		question:
+			'Three bells toll at the intervals of 10, 15 and 24 minutes. All the three begin to toll together at 8 A.M. At what time they will again toll together?',
+		options: ['10.45 A.M', '10 A.M', '9.25 A.M', '8.50 A.M'],
+		correctOption: 2,
+	},
+	{
+		id: 163,
+		question:
+			'In your bookshelf, you have five favorite books. If you decide to arrange these five books in every possible combination and moved just one book in every half a minute. How much time it will take you to arrange?',
+		options: ['3 hours', '1 hours', '2 hours', '30 minutes'],
+		correctOption: 2,
+	},
+	{
+		id: 164,
+		question:
+			'From the alternatives, select the set which is most alike the set (23, 29, 31)',
+		options: ['(17, 21, 29)', '(31, 37, 49)', '(13, 15, 23)', '(41, 43, 47)'],
+		correctOption: 4,
+	},
+	{
+		id: 165,
+		question: 'If 6 is 50% of a number, what is the number?',
+		options: ['10', '11', '12', '13'],
+		correctOption: 3,
+	},
+
+	{
+		id: 166,
+		question: 'Which number is missing? 1, 9, 25, 49, (?)',
+		options: ['121', '81', '16', '169'],
+		correctOption: 2,
+	},
+	{
+		id: 167,
+		question:
+			'Andy read 4/5 th of a story book which has 100 pages. How many pages of the book is not yet read by Andy?',
+		options: ['40', '60', '80', '20'],
+		correctOption: 4,
+	},
+	{
+		id: 168,
+		question:
+			'Which least number should be added to 2600 to make it a perfect square?',
+		options: ['3', '39', '1', '5'],
+		correctOption: 1,
+	},
+	{
+		id: 169,
+		question:
+			'If ‘+’ means ‘×’, ‘-‘ means ‘+’, ‘×’ means ‘÷’ and ‘÷’ means ‘-‘ then find the value of; 6 – 9 + 8 × 3 ÷ 20 = ……. .',
+		options: ['6', '10', '-2', '12'],
+		correctOption: 2,
+	},
+	{
+		id: 170,
+		question:
+			'A car covers a distance of 200km in 2 hours 40 minutes, whereas a jeep covers the same distance in 2 hours. What is the ratio of their speed?',
+		options: ['3:4', '4:3', '4:5', '5:4'],
+		correctOption: 1,
+	},
 ]
